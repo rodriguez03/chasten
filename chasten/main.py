@@ -431,6 +431,12 @@ def analyze(  # noqa: PLR0913, PLR0915
         "-sx",
         help="The directory for the XML file(s) to be saved in."
     ),
+    chasten_gatorgrade: Path = typer.Option(
+        None, 
+        "--gatorgrader",
+        "-gg",
+        help="Integration of gatorgrade tool."
+    ),
     config: Path = typer.Option(
         None,
         "--config",
